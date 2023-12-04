@@ -46,3 +46,7 @@ python /path/to/eval.py /path/to/clean_data_filename /path/to/poisoned_data_file
 ```
  Example usage: 
 ```  %run -i /scratch/aa10350/MLForCybersec/CSAW-HackML-2020/lab3/eval.py  /scratch/aa10350/MLForCybersec/Lab3/cl/test.h5  /scratch/aa10350/MLForCybersec/Lab3/bd/bd_test.h5 /scratch/aa10350/MLForCybersec/model_X=10.h5 ```
+
+## Jupyter Notebook
+
+To run fine pruning from scratch, run all the cells of aa10350_backdoor_attacks.ipynb. Make sure that the data and model are downloaded

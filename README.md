@@ -49,4 +49,4 @@ python /path/to/eval.py /path/to/clean_data_filename /path/to/poisoned_data_file
 
 ## Jupyter Notebook
 
-To run fine pruning from scratch, run all the cells of aa10350_backdoor_attacks.ipynb. Make sure that the data and model are downloaded
+To run fine pruning from scratch, run all the cells of `aa10350_backdoor_attacks.ipynb`. Make sure that the data and model are downloaded

@@ -23,4 +23,26 @@
 
 ## Model and Data
 
-The model can be found [here](https://github.com/csaw-hackml/CSAW-HackML-2020/tree/master/lab3) in the models directory and the data can be downloaded from [this link](https://drive.google.com/drive/folders/1Rs68uH8Xqa4j6UxG53wzD0uyI8347dSq?usp=sharing).
+The model can be found [here](https://github.com/csaw-hackml/CSAW-HackML-2020/tree/master/lab3) in the models directory and the data can be downloaded from [this link](https://drive.google.com/drive/folders/1Rs68uH8Xqa4j6UxG53wzD0uyI8347dSq?usp=sharing). The dataset comprises images sourced from the YouTube Aligned Face Dataset, featuring 1,283 individuals. The folder cl contains clean test and validation images while bd stores poisoned test and validation set. The files bd_valid.h5 bd_test.h5 contains test images associated with the activation of sunglasses triggers, which in turn activates the backdoor functionality in bd_net.h5.
+
+## Running eval.py
+
+1. Clone the repository
+   
+```
+git clone https://github.com/arushi297/ML-for-Cybersecurity-Backdoor-Detectors.git
+```
+
+2. Download the dataset from the links provided above
+
+3. Run the eval.py script
+
+```
+python /path/to/eval.py /path/to/clean_data_filename /path/to/poisoned_data_filename /path/to/pruned_model
+```
+ or if running from the jupyter notebook:
+```
+%run -i /path/to/eval.py /path/to/clean_data_filename /path/to/poisoned_data_filename /path/to/pruned_model
+```
+ Example usage: 
+```  %run -i /scratch/aa10350/MLForCybersec/CSAW-HackML-2020/lab3/eval.py  /scratch/aa10350/MLForCybersec/Lab3/cl/test.h5  /scratch/aa10350/MLForCybersec/Lab3/bd/bd_test.h5 /scratch/aa10350/MLForCybersec/model_X=10.h5 ```
